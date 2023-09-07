@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Inter:wght@400;600;900&display=swap');
+
+body, p {
+    font-size: 16px;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 288px auto;
+    /* background-color: #090A0D; */
+}
+
+.sidebar{
+    background-color: #141517;
+    color: #fff;
+    border-right: solid 1px #2C2D33;
+
+    grid-column: 1;
+    grid-row: 1 / 4;
+
+    display: grid;
+    gap: 24px;
+    padding: 24px;
+    grid-template-rows: 56px 287px 169px;
+}
+
+.sidebar .logo{
+    padding: 16px;
+    font-size: 20px;
+    font-family: 'Gideon Roman', cursive;
+}
+
+.sidebar .sidebar-first{
+    padding-bottom: 40px;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    list-style: none;
+    padding: 16px 16px;
+    font-size: 1rem;
+    opacity: 60%;
+}
+
+#selected {
+    border-left: 4px solid #fff;
+    color: #fff;
+    opacity: 100%;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 167px;
+    padding: 32px 40px;
+}
+
+.topnav{
+    position: relative;
+    grid-column: 1;
+}
+
+.topnav input {
+    -webkit-appearance: none;
+    outline: none;
+    border: 1px solid #2C2D33;
+    padding: 12px 24px 12px 58px;
+    border-radius: 50px;
+
+    color: #727374;
+    background-color: #141517;
+}
+
+.search-icon {
+    position: absolute;
+    padding: 12px 24px;
+    color: #727374;
+
+}
+
+.profile {
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+    gap: 24px;
+    
+}
+
+.profile-photo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: end;
+    gap: 16px;
+}
+
+.photo img {
+    height: 48px;
+    width: 48px;
+    border-radius: 100%;
+}
+
+.github-icon {
+    font-size: 24px;
+}
